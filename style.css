@@ -1,0 +1,64 @@
+.apresentaçao-div-conteudo{
+    display: flex;
+    color: green;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.o-que-plantio{
+    display: flex;
+    color: rgb(96, 131, 96);
+    align-items: center;
+    justify-content: space-around;  
+}
+
+.tipos-de-platio{
+    display: flex;
+    color: green;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.platio-direto{
+    justify-content: space-around;
+color: green;
+    
+   
+}
+
+.plantio-convencional{
+    color: green;
+    align-items: center;
+    justify-content: space-around;
+    display: center;
+}
+
+.plantio-aéreo{
+    color: green;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.plantio-em-linha{
+    color: green;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.plantio-a-lanço{
+    color: green;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.plantio-cultivo-mínimo{
+    color: green;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rodape{
+    width: 90%;
+    height: 15%;
+    padding:0px 0px 0px 0px;
+}
