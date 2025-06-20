@@ -9,26 +9,28 @@
   <!-- Fonte Cardo -->
   <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet" />
 
-  <!-- Font Awesome para ícones -->
+  <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
 
-  <!-- CSS embutido -->
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    :root {
+      font-size: 100%;
     }
 
     body {
       font-family: 'Cardo', serif;
-      font-size: 16px;
       background: #f4f7f9;
       color: #2c3e50;
       line-height: 1.6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     .container {
@@ -40,22 +42,31 @@
     .topo {
       background-color: #1abc9c;
       color: white;
-      padding: 30px 20px;
+      padding: 2rem 1rem;
       text-align: center;
       border-radius: 12px;
-      margin-bottom: 40px;
+      margin-bottom: 2.5rem;
     }
 
     .topo h1 {
       font-size: 2rem;
-      margin-top: 20px;
-      font-weight: bold;
+      margin-top: 1.2rem;
+    }
+
+    .intro-text {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+      color: white;
+      line-height: 1.6;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .botoes-acessibilidade {
       display: flex;
       justify-content: center;
-      gap: 16px;
+      gap: 1rem;
       flex-wrap: wrap;
     }
 
@@ -63,8 +74,8 @@
       background-color: #e74c3c;
       color: white;
       border: none;
-      padding: 10px 18px;
-      font-size: 1.1rem;
+      padding: 0.6rem 1.1rem;
+      font-size: 1rem;
       border-radius: 8px;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -72,7 +83,7 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 0.5rem;
     }
 
     .botoes-acessibilidade .btn:hover {
@@ -83,17 +94,17 @@
     .tipos-de-plantio-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      margin-bottom: 40px;
+      gap: 2rem;
+      margin-bottom: 3rem;
     }
 
     .bloco-plantio {
       background-color: white;
-      padding: 20px;
+      padding: 1.5rem;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(44, 62, 80, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
       text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .bloco-plantio:hover {
@@ -103,60 +114,56 @@
 
     .bloco-plantio h2 {
       color: #16a085;
-      margin-bottom: 12px;
-      font-size: 1.3rem;
-      font-weight: 700;
+      margin-bottom: 0.8rem;
+      font-size: 1.25rem;
     }
 
     .bloco-plantio p {
       color: #555;
       font-size: 1rem;
-      margin-bottom: 15px;
+      margin-bottom: 1rem;
     }
 
     .bloco-plantio img {
       max-width: 100%;
-      height: auto;
       border-radius: 10px;
-      margin-top: 10px;
+      margin-top: 0.5rem;
     }
 
     .rodape {
       background-color: #2c3e50;
       color: #ecf0f1;
-      padding: 30px 20px;
+      padding: 2rem 1rem;
       text-align: center;
       border-radius: 12px;
     }
 
     .rodape p {
       font-size: 1.1rem;
-      margin-bottom: 20px;
+      margin-bottom: 1.2rem;
     }
 
     .contato {
-      margin-top: 10px;
+      margin-top: 0.5rem;
     }
 
     .contato p {
       font-weight: bold;
-      margin-bottom: 10px;
+      margin-bottom: 0.6rem;
     }
 
     .btn-contato {
-      display: inline-block;
-      margin: 8px 10px;
-      padding: 12px 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 0.5rem 0.7rem;
+      padding: 0.7rem 1.2rem;
       background-color: #3498db;
       color: white;
       text-decoration: none;
       border-radius: 8px;
       transition: background 0.3s ease, transform 0.2s ease;
       font-weight: bold;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 1rem;
     }
 
     .btn-contato:hover {
@@ -166,20 +173,7 @@
 
     @media (max-width: 768px) {
       .topo h1 {
-        font-size: 1.6rem;
-      }
-
-      .btn {
-        font-size: 1rem;
-        padding: 8px 14px;
-      }
-
-      .bloco-plantio {
-        padding: 16px;
-      }
-
-      .btn-contato {
-        padding: 10px 16px;
+        font-size: 1.5rem;
       }
     }
   </style>
@@ -196,78 +190,65 @@
       </button>
     </div>
     <h1>O QUE É UM SISTEMA DE PLANTIO?</h1>
+    <p class="intro-text">
+      Um sistema de plantio é a forma como o solo é preparado e cuidado, como as sementes são semeadas, contemplando também práticas e métodos utilizados pelos agricultores em suas lavouras.<br />
+      <strong>Quais os tipos de plantio?</strong>
+    </p>
   </header>
 
-  <!-- CONTEÚDO PRINCIPAL -->
+  <!-- CONTEÚDO -->
   <main class="container">
     <section class="tipos-de-plantio-container">
       <article class="bloco-plantio">
         <h2>PLANTIO DIRETO</h2>
-        <p>
-          Técnica antiga em que se planta diretamente no solo, mantendo a palha na superfície para proteger e enriquecer o solo.
-        </p>
-        <img src="imagens/Plantio direto.jpeg" alt="Plantio direto com palhada sobre o solo" />
+        <p>Plantio direto mantém a palha sobre o solo, protegendo e melhorando a qualidade da terra.</p>
+        <img src="imagens/Plantio direto.jpeg" alt="Plantio direto" />
       </article>
-
       <article class="bloco-plantio">
         <h2>PLANTIO CONVENCIONAL</h2>
-        <p>
-          Sistema tradicional com aração e gradagem para preparo do solo, permitindo melhor incorporação de adubos.
-        </p>
-        <img src="imagens/Plantio Convencional.jpeg" alt="Solo arado em plantio convencional" />
+        <p>Utiliza aração e gradagem para preparar o solo antes do plantio das culturas.</p>
+        <img src="imagens/Plantio Convencional.jpeg" alt="Plantio convencional" />
       </article>
-
       <article class="bloco-plantio">
         <h2>PLANTIO AÉREO</h2>
-        <p>
-          Utiliza aviões ou drones para espalhar sementes em grandes áreas, sendo eficaz em regiões de difícil acesso.
-        </p>
-        <img src="imagens/Plantio aéreo.jpeg" alt="Avião agrícola realizando plantio aéreo" />
+        <p>Distribuição de sementes feita por aviões ou drones, especialmente em grandes áreas.</p>
+        <img src="imagens/Plantio aéreo.jpeg" alt="Plantio aéreo" />
       </article>
-
       <article class="bloco-plantio">
         <h2>PLANTIO A LANÇO</h2>
-        <p>
-          As sementes são lançadas de forma uniforme sobre o solo, sem definição de linhas ou fileiras.
-        </p>
-        <img src="imagens/Plantio a lanço.jpeg" alt="Plantio a lanço com sementes espalhadas no solo" />
+        <p>Sementes são lançadas ao solo sem linhas específicas, podendo ser feito manualmente ou por máquinas.</p>
+        <img src="imagens/Plantio a lanço.jpeg" alt="Plantio a lanço" />
       </article>
-
       <article class="bloco-plantio">
         <h2>PLANTIO EM LINHA</h2>
-        <p>
-          Sementes são depositadas em linhas regulares com espaçamentos definidos, facilitando o manejo agrícola.
-        </p>
-        <img src="imagens/Plantio em linha.jpeg" alt="Plantio em linha com fileiras visíveis" />
+        <p>Realizado com espaçamento regular, facilita o manejo e aumenta a produtividade.</p>
+        <img src="imagens/Plantio em linha.jpeg" alt="Plantio em linha" />
       </article>
     </section>
   </main>
 
   <!-- RODAPÉ -->
   <footer class="rodape">
-    <p>
-      O sistema de plantio adequado contribui para a sustentabilidade e produtividade das lavouras,
-      respeitando as características do solo e do ambiente.
-    </p>
+    <p>O sistema de plantio adequado contribui para a sustentabilidade e produtividade das lavouras.</p>
     <div class="contato">
       <p>Entre em contato:</p>
-      <a class="btn-contato" href="https://wa.me/5544999999999" target="_blank" rel="noopener">
+      <a class="btn-contato" href="https://wa.me/5544999999999" target="_blank">
         <i class="fab fa-whatsapp"></i> WhatsApp (44) 99999-9999
       </a>
-      <a class="btn-contato" href="https://instagram.com/plantioverde" target="_blank" rel="noopener">
-        <i class="fab fa-instagram"></i> Instagram @plantioverde
+      <a class="btn-contato" href="https://instagram.com/plantioverde" target="_blank">
+        <i class="fab fa-instagram"></i> @plantioverde
       </a>
     </div>
   </footer>
 
-  <!-- SCRIPT DE ACESSIBILIDADE -->
+  <!-- SCRIPT -->
   <script>
-    let currentFontSize = 16;
+    let currentFontSize = 100;
     function changeFontSize(change) {
-      currentFontSize += change;
-      if (currentFontSize < 12) currentFontSize = 12;
-      if (currentFontSize > 24) currentFontSize = 24;
-      document.body.style.fontSize = currentFontSize + "px";
+      currentFontSize += change * 10;
+      if (currentFontSize < 70) currentFontSize = 70;
+      if (currentFontSize > 150) currentFontSize = 150;
+      document.documentElement.style.fontSize = currentFontSize + '%';
     }
   </script>
 </body>
