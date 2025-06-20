@@ -1,213 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TIPOS DE PLANTIO</title>
 
-  <!-- Fonte do Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 
-  <!-- CSS embutido -->
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Cardo', serif;
-      background-color: #f8f8f8;
-      color: #333;
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    /* Cabeçalho e navegação */
-    .cabeçalho {
-      background-color: #356859;
-      padding: 10px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .cabeçalho-imagem {
-      max-width: 150px;
-      height: auto;
-    }
-
-    .navegacao {
-      margin-top: 10px;
-    }
-
-    .menu {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .menu li a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      padding: 8px 12px;
-      border-radius: 4px;
-      transition: background-color 0.3s;
-    }
-
-    .menu li a:hover {
-      background-color: #287d59;
-    }
-
-    /* Botões de acessibilidade */
-    .botoes-acessibilidade {
-      display: flex;
-      justify-content: center;
-      margin: 15px 0;
-      gap: 10px;
-    }
-
-    .btn {
-      padding: 10px 15px;
-      font-size: 16px;
-      background-color: #37966f;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .btn:hover {
-      background-color: #287d59;
-    }
-
-    /* Apresentação */
-    .apresentacao {
-      padding: 40px 20px;
-      text-align: center;
-      background-color: #ffffff;
-    }
-
-    .apresentacao-div-conteudo h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #113537;
-    }
-
-    .descricao-plantio h2 {
-      font-size: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-      color: #444;
-    }
-
-    /* Tipos de plantio */
-    .tipos-de-plantio {
-      padding: 40px 20px;
-      background-color: #eef0f2;
-    }
-
-    .tipos-de-plantio h1 {
-      text-align: center;
-      font-size: 30px;
-      margin-bottom: 40px;
-      color: #2c3e50;
-    }
-
-    .tipos-de-plantio-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .plantio-direto,
-    .plantio-convencional,
-    .plantio-aereo {
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 350px;
-      flex: 1 1 300px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    .plantio-direto h1,
-    .plantio-convencional h1,
-    .plantio-aereo h1 {
-      font-size: 22px;
-      color: #14532d;
-      margin-bottom: 10px;
-    }
-
-    .plantio-direto h2,
-    .plantio-convencional h2,
-    .plantio-aereo h2 {
-      font-size: 16px;
-      color: #333;
-    }
-
-    .foto-spd,
-    .plantio-convencional img,
-    .plantio-aereo img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-top: 10px;
-    }
-
-    /* Rodapé */
-    .rodape {
-      background-color: #356859;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-
-    .rodape-imagem {
-      max-width: 150px;
-      height: auto;
-    }
-
-    /* Responsividade */
-    @media (max-width: 768px) {
-      .menu {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .botoes-acessibilidade {
-        flex-direction: column;
-      }
-
-      .btn {
-        margin: 5px 0;
-      }
-    }
-  </style>
 </head>
 
 <body>
-
-  <!-- Cabeçalho com logo e menu -->
-  <header class="cabeçalho">
-    <img class="cabeçalho-imagem" src="logo.png" alt="Logo da Elly Coud">
-    <nav class="navegacao">
-      <ul class="menu">
-        <li><a href="#apresentacao">Início</a></li>
-        <li><a href="#tipos-de-plantio">Tipos de Plantio</a></li>
-        <li><a href="#rodape">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
 
   <!-- Botões de acessibilidade -->
   <div class="botoes-acessibilidade">
@@ -223,7 +29,7 @@
     }
   </script>
 
-  <!-- Seção de Apresentação -->
+  <!-- Apresentação -->
   <section class="apresentacao" id="apresentacao">
     <div class="apresentacao-div-conteudo">
       <h2>O QUE É UM SISTEMA DE PLANTIO?</h2>
@@ -235,33 +41,39 @@
     </div>
   </section>
 
-  <!-- Seção Tipos de Plantio -->
+  <!-- Tipos de Plantio -->
   <section class="tipos-de-plantio" id="tipos-de-plantio">
     <h1>Quais os tipos de plantio?</h1>
     <div class="tipos-de-plantio-container">
 
-      <div class="plantio-direto">
+      <div class="bloco-plantio">
         <h1>PLANTIO DIRETO</h1>
-        <h2>
-          É chamado de SPD (Sistema de Plantio Direto), uma técnica antiga que consiste em plantar diretamente no solo da lavoura, mantendo a palha na superfície. Esse sistema visa diminuir o impacto ambiental e melhorar a fertilidade do solo.
-        </h2>
-        <img class="foto-spd" src="plantio-direto.jpg" alt="Foto de um sistema de plantio direto">
+        <h2>É chamado de SPD (Sistema de Plantio Direto), uma técnica antiga que consiste em plantar diretamente no solo da lavoura, mantendo a palha na superfície. Esse sistema visa diminuir o impacto ambiental e melhorar a fertilidade do solo.</h2>
+        <img src="imagens/Plantio direto.jpeg" alt="Plantio direto com palhada sobre o solo" />
       </div>
 
-      <div class="plantio-convencional">
+      <div class="bloco-plantio">
         <h1>PLANTIO CONVENCIONAL</h1>
-        <h2>
-          É o sistema de plantio que envolve métodos tradicionais, como aração e a gradagem, para tirar os cultivos anteriores e revolver a camada da superfície.
-        </h2>
-        <img src="plantio-convencional.jpg" alt="Foto de um sistema de plantio convencional">
+        <h2>É o sistema de plantio que envolve métodos tradicionais, como aração e a gradagem, para tirar os cultivos anteriores e revolver a camada da superfície.</h2>
+        <img src="imagens/Plantio Convencional.jpeg" alt="Solo arado em plantio convencional" />
       </div>
 
-      <div class="plantio-aereo">
+      <div class="bloco-plantio">
         <h1>PLANTIO AÉREO</h1>
-        <h2>
-          Também conhecido como semeadura aérea, consiste em distribuir sementes ou mudas de plantas por meio do lançamento aéreo, usando aviões ou drones tecnológicos.
-        </h2>
-        <img src="plantio-aereo.jpg" alt="Foto de um sistema de plantio aéreo">
+        <h2>Também conhecido como semeadura aérea, consiste em distribuir sementes ou mudas de plantas por meio do lançamento aéreo, usando aviões ou drones tecnológicos.</h2>
+        <img src="imagens/Plantio aéreo.jpeg" alt="Avião agrícola realizando plantio aéreo" />
+      </div>
+
+      <div class="bloco-plantio">
+        <h1>PLANTIO A LANÇO</h1>
+        <h2>É um método de semeadura em que as sementes são distribuídas de forma uniforme sobre o solo, sem linhas definidas, podendo ser feito manualmente ou com máquinas específicas.</h2>
+        <img src="imagens/Plantio a lanço.jpeg" alt="Plantio a lanço com sementes espalhadas no solo" />
+      </div>
+
+      <div class="bloco-plantio">
+        <h1>PLANTIO EM LINHA</h1>
+        <h2>Consiste em depositar sementes em fileiras regulares com espaçamentos definidos, permitindo melhor organização e manejo da cultura.</h2>
+        <img src="imagens/Plantio em linha.jpeg" alt="Plantio em linha com fileiras visíveis" />
       </div>
 
     </div>
@@ -269,7 +81,7 @@
 
   <!-- Rodapé -->
   <footer class="rodape" id="rodape">
-    <img class="rodape-imagem" src="rodape.png" alt="Imagem do rodapé">
+    <img class="rodape-imagem" src="rodape.png" alt="Imagem do rodapé" />
   </footer>
 
 </body>
