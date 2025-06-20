@@ -5,130 +5,170 @@
   box-sizing: border-box;
 }
 
-/* Fonte geral */
 body {
   font-family: 'Cardo', serif;
-  background-color: #f8f8f8;
+  background-color: #f0f4f8;
   color: #333;
   font-size: 16px;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Botões de acessibilidade */
+/* Container geral para limitar largura */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === TOPO - botões e título === */
+.topo {
+  padding: 30px 0 20px 0;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+}
+
 .botoes-acessibilidade {
   display: flex;
   justify-content: center;
-  margin: 15px 0;
-  gap: 10px;
+  gap: 15px;
+  margin-bottom: 25px;
 }
 
 .btn {
-  padding: 10px 15px;
-  font-size: 16px;
+  padding: 12px 20px;
+  font-size: 18px;
   background-color: #37966f;
-  color: white;
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(55, 150, 111, 0.5);
 }
 
 .btn:hover {
   background-color: #287d59;
+  box-shadow: 0 5px 10px rgba(40, 125, 89, 0.6);
 }
 
-/* Apresentação */
-.apresentacao {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #ffffff;
-}
-
-.apresentacao-div-conteudo h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #113537;
-}
-
-.descricao-plantio h2 {
-  font-size: 20px;
+.topo h1 {
+  font-size: 2.5rem;
+  color: #14532d;
+  font-weight: 700;
   max-width: 800px;
   margin: 0 auto;
-  color: #444;
+  line-height: 1.2;
 }
 
-/* Tipos de plantio */
+/* === MEIO - tipos de plantio === */
 .tipos-de-plantio {
+  flex-grow: 1;
+  background-color: #eef4f7;
   padding: 40px 20px;
-  background-color: #eef0f2;
-}
-
-.tipos-de-plantio h1 {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 40px;
-  color: #2c3e50;
+  border-radius: 10px;
+  box-shadow: inset 0 0 20px #d9e6eb;
 }
 
 .tipos-de-plantio-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .bloco-plantio {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 350px;
-  flex: 1 1 300px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 25px 20px 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
 }
 
-.bloco-plantio h1 {
-  font-size: 22px;
-  color: #14532d;
-  margin-bottom: 10px;
+.bloco-plantio:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
 }
 
 .bloco-plantio h2 {
+  font-size: 22px;
+  color: #14532d;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.bloco-plantio p {
   font-size: 16px;
-  color: #333;
+  color: #555;
+  margin-bottom: 15px;
+  min-height: 80px;
+  line-height: 1.4;
 }
 
 .bloco-plantio img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Rodapé */
+/* === RODAPÉ + CONCLUSÃO === */
 .rodape {
   background-color: #356859;
+  color: #e0e8e5;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 30px 20px;
+  border-radius: 0 0 10px 10px;
+  margin-top: 50px;
+}
+
+.rodape p {
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .rodape-imagem {
-  max-width: 150px;
+  max-width: 130px;
   height: auto;
+  filter: brightness(0) invert(1);
+  margin: 0 auto;
 }
 
-/* Responsividade */
+/* RESPONSIVO */
 @media (max-width: 768px) {
+  .topo h1 {
+    font-size: 1.9rem;
+    padding: 0 10px;
+  }
+
+  .bloco-plantio p {
+    min-height: auto;
+  }
+
+  .tipos-de-plantio-container {
+    grid-template-columns: 1fr;
+  }
+
   .botoes-acessibilidade {
     flex-direction: column;
   }
 
   .btn {
     margin: 5px 0;
-  }
-
-  .tipos-de-plantio-container {
-    flex-direction: column;
-    align-items: center;
   }
 }
