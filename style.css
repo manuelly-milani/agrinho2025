@@ -8,92 +8,90 @@
 body {
   font-family: 'Cardo', serif;
   font-size: 16px;
+  background: #f4f7f9;
+  color: #2c3e50;
   line-height: 1.6;
-  color: #333;
-  background: #f9fafb;
-  padding: 20px 0;
 }
 
 /* CONTAINER CENTRALIZADO */
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* TOPO */
+/* TOPO MODERNO */
 .topo {
-  background-color: #2c3e50;
-  color: #ecf0f1;
-  padding: 20px 30px;
-  border-radius: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 30px;
+  background-color: #1abc9c;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  position: relative;
 }
 
 .topo h1 {
-  flex: 1 1 100%;
-  font-size: 1.8rem;
-  text-align: center;
-  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
+/* BOTÕES DE ACESSIBILIDADE */
 .botoes-acessibilidade {
   display: flex;
-  gap: 12px;
   justify-content: center;
-  flex: 1 1 auto;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .botoes-acessibilidade .btn {
-  background-color: #2980b9;
+  background-color: #e74c3c;
+  color: white;
   border: none;
-  color: #ecf0f1;
-  font-size: 1.2rem;
-  padding: 8px 16px;
-  border-radius: 5px;
+  padding: 10px 18px;
+  font-size: 1.1rem;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  user-select: none;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.botoes-acessibilidade .btn:hover,
-.botoes-acessibilidade .btn:focus {
-  background-color: #3498db;
-  outline: none;
+.botoes-acessibilidade .btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
 }
 
-/* MEIO - TIPOS DE PLANTIO */
+/* SEÇÃO DE PLANTIOS */
 .tipos-de-plantio-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  gap: 30px;
+  margin-bottom: 40px;
 }
 
 .bloco-plantio {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 3px 8px rgba(44, 62, 80, 0.1);
+  background-color: white;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-  transition: transform 0.3s ease;
 }
 
 .bloco-plantio:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(44, 62, 80, 0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(44, 62, 80, 0.2);
 }
 
 .bloco-plantio h2 {
-  color: #2c3e50;
+  color: #16a085;
   margin-bottom: 12px;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
@@ -106,63 +104,71 @@ body {
 .bloco-plantio img {
   max-width: 100%;
   height: auto;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(44, 62, 80, 0.1);
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 /* RODAPÉ */
 .rodape {
-  margin-top: 40px;
-  padding: 20px 30px;
-  background-color: #34495e;
+  background-color: #2c3e50;
   color: #ecf0f1;
-  border-radius: 8px;
+  padding: 30px 20px;
   text-align: center;
+  border-radius: 12px;
 }
 
 .rodape p {
-  max-width: 700px;
-  margin: 0 auto 20px auto;
   font-size: 1.1rem;
-  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-/* CONTATO NO RODAPÉ */
+/* CONTATO COM ÍCONES */
 .contato {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .contato p {
-  margin-bottom: 10px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .btn-contato {
   display: inline-block;
-  margin: 5px 10px;
-  padding: 10px 16px;
-  background-color: #27ae60;
+  margin: 8px 10px;
+  padding: 12px 20px;
+  background-color: #3498db;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s ease;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
 }
 
 .btn-contato:hover {
-  background-color: #2ecc71;
+  background-color: #2980b9;
+  transform: scale(1.05);
 }
 
 /* RESPONSIVO */
-@media (max-width: 600px) {
-  .topo {
-    flex-direction: column;
-  }
-
+@media (max-width: 768px) {
   .topo h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
-  .botoes-acessibilidade {
-    justify-content: center;
+  .btn {
+    font-size: 1rem;
+    padding: 8px 14px;
+  }
+
+  .bloco-plantio {
+    padding: 16px;
+  }
+
+  .btn-contato {
+    padding: 10px 16px;
   }
 }
