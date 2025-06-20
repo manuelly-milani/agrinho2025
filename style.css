@@ -1,0 +1,137 @@
+/* Fonte e reset básico */
+body {
+    font-family: 'Cardo', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Cabeçalho */
+.cabeçalho {
+    background-color: #356859;
+    padding: 20px;
+    text-align: center;
+}
+
+.cabeçalho-imagem {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Botões de fonte */
+.btn {
+    margin: 10px 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #37966f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #287d59;
+}
+
+/* Seções */
+.apresentaçao {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.apresentaçao-div-conteudo h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #113537;
+}
+
+/* Texto principal */
+.o\ que\ plantio h2 {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #444;
+}
+
+/* Tipos de plantio */
+.tipos\ de\ plantio {
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+}
+
+.tipos\ de\ plantio h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+/* Blocos de cada tipo */
+.platio\ direto, 
+.plantio\ convencional, 
+.plantio\ aéreo {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.platio\ direto h1,
+.plantio\ convencional h1,
+.plantio\ aéreo h1 {
+    font-size: 24px;
+    color: #14532d;
+    margin-bottom: 10px;
+}
+
+.platio\ direto h2,
+.plantio\ convencional h2,
+.plantio\ aéreo h2 {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Imagens dos sistemas de plantio */
+.foto\ spd,
+.plantio\ convencional img,
+.plantio\ aéreo img {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #356859;
+    padding: 20px;
+    text-align: center;
+}
+
+.rodape-imagem {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .apresentaçao-div-conteudo h2 {
+        font-size: 22px;
+    }
+
+    .tipos\ de\ plantio h1 {
+        font-size: 24px;
+    }
+}
