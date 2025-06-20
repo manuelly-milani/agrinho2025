@@ -19,16 +19,80 @@
 </head>
 
 <body>
-  <!-- TOPO: Botões e título -->
-  <div class="topo container">
+  <!-- TOPO -->
+  <header class="topo container">
     <div class="botoes-acessibilidade">
       <button class="btn" onclick="changeFontSize(1)">A+</button>
       <button class="btn" onclick="changeFontSize(-1)">A-</button>
     </div>
-
     <h1>O QUE É UM SISTEMA DE PLANTIO?</h1>
-  </div>
+  </header>
 
+  <!-- MEIO -->
+  <main class="tipos-de-plantio container" id="tipos-de-plantio">
+    <section class="tipos-de-plantio-container">
+      <article class="bloco-plantio">
+        <h2>PLANTIO DIRETO</h2>
+        <p>
+          Técnica antiga que consiste em plantar diretamente no solo da lavoura, mantendo a palha
+          na superfície. Visa diminuir o impacto ambiental e melhorar a fertilidade do solo.
+        </p>
+        <img src="imagens/Plantio direto.jpeg" alt="Plantio direto com palhada sobre o solo" />
+      </article>
+
+      <article class="bloco-plantio">
+        <h2>PLANTIO CONVENCIONAL</h2>
+        <p>
+          Sistema tradicional que envolve aração e gradagem para preparar o solo antes do plantio.
+        </p>
+        <img src="imagens/Plantio Convencional.jpeg" alt="Solo arado em plantio convencional" />
+      </article>
+
+      <article class="bloco-plantio">
+        <h2>PLANTIO AÉREO</h2>
+        <p>
+          Semeadura feita por aviões ou drones, ideal para áreas extensas ou de difícil acesso.
+        </p>
+        <img src="imagens/Plantio aéreo.jpeg" alt="Avião agrícola realizando plantio aéreo" />
+      </article>
+
+      <article class="bloco-plantio">
+        <h2>PLANTIO A LANÇO</h2>
+        <p>
+          Sementes espalhadas sobre o solo sem linhas definidas, podendo ser manual ou mecanizado.
+        </p>
+        <img src="imagens/Plantio a lanço.jpeg" alt="Plantio a lanço com sementes espalhadas no solo" />
+      </article>
+
+      <article class="bloco-plantio">
+        <h2>PLANTIO EM LINHA</h2>
+        <p>
+          Sementes organizadas em fileiras com espaçamentos regulares, facilitando o manejo.
+        </p>
+        <img src="imagens/Plantio em linha.jpeg" alt="Plantio em linha com fileiras visíveis" />
+      </article>
+    </section>
+  </main>
+
+  <!-- RODAPÉ ATUALIZADO -->
+  <footer class="rodape">
+    <p>
+      O sistema de plantio adequado contribui para a sustentabilidade e produtividade das lavouras,
+      respeitando as características do solo e do ambiente.
+    </p>
+
+    <div class="contato">
+      <p>Entre em contato:</p>
+      <a class="btn-contato" href="https://wa.me/5544999999999" target="_blank" rel="noopener">
+        WhatsApp (44) 99999-9999
+      </a>
+      <a class="btn-contato" href="https://instagram.com/plantioverde" target="_blank" rel="noopener">
+        Instagram @plantioverde
+      </a>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
   <script>
     let currentFontSize = 16;
     function changeFontSize(change) {
@@ -38,68 +102,5 @@
       document.body.style.fontSize = currentFontSize + "px";
     }
   </script>
-
-  <!-- MEIO: Tipos de Plantio -->
-  <section class="tipos-de-plantio container" id="tipos-de-plantio">
-    <div class="tipos-de-plantio-container">
-      <div class="bloco-plantio">
-        <h2>PLANTIO DIRETO</h2>
-        <p>
-          É chamado de SPD (Sistema de Plantio Direto), uma técnica antiga que
-          consiste em plantar diretamente no solo da lavoura, mantendo a palha
-          na superfície. Esse sistema visa diminuir o impacto ambiental e
-          melhorar a fertilidade do solo.
-        </p>
-        <img src="imagens/Plantio direto.jpeg" alt="Plantio direto com palhada sobre o solo" />
-      </div>
-
-      <div class="bloco-plantio">
-        <h2>PLANTIO CONVENCIONAL</h2>
-        <p>
-          É o sistema de plantio que envolve métodos tradicionais, como aração
-          e a gradagem, para tirar os cultivos anteriores e revolver a camada
-          da superfície.
-        </p>
-        <img src="imagens/Plantio Convencional.jpeg" alt="Solo arado em plantio convencional" />
-      </div>
-
-      <div class="bloco-plantio">
-        <h2>PLANTIO AÉREO</h2>
-        <p>
-          Também conhecido como semeadura aérea, consiste em distribuir sementes
-          ou mudas de plantas por meio do lançamento aéreo, usando aviões ou drones tecnológicos.
-        </p>
-        <img src="imagens/Plantio aéreo.jpeg" alt="Avião agrícola realizando plantio aéreo" />
-      </div>
-
-      <div class="bloco-plantio">
-        <h2>PLANTIO A LANÇO</h2>
-        <p>
-          É um método de semeadura em que as sementes são distribuídas de forma
-          uniforme sobre o solo, sem linhas definidas, podendo ser feito manualmente
-          ou com máquinas específicas.
-        </p>
-        <img src="imagens/Plantio a lanço.jpeg" alt="Plantio a lanço com sementes espalhadas no solo" />
-      </div>
-
-      <div class="bloco-plantio">
-        <h2>PLANTIO EM LINHA</h2>
-        <p>
-          Consiste em depositar sementes em fileiras regulares com espaçamentos definidos,
-          permitindo melhor organização e manejo da cultura.
-        </p>
-        <img src="imagens/Plantio em linha.jpeg" alt="Plantio em linha com fileiras visíveis" />
-      </div>
-    </div>
-  </section>
-
-  <!-- RODAPÉ: Conclusão + imagem -->
-  <footer class="rodape">
-    <p>
-      O sistema de plantio adequado contribui para a sustentabilidade e produtividade das lavouras,
-      respeitando as características do solo e do ambiente.
-    </p>
-    <img class="rodape-imagem" src="rodape.png" alt="Imagem do rodapé" />
-  </footer>
 </body>
 </html>
