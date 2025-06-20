@@ -1,18 +1,26 @@
-/* Fonte e reset básico */
-body {
-    font-family: 'Cardo', serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte geral */
+body {
+    font-family: 'Cardo', serif;
     background-color: #f8f8f8;
     color: #333;
     font-size: 16px;
+    line-height: 1.6;
 }
 
-/* Cabeçalho */
+/* Cabeçalho com menu */
 .cabeçalho {
     background-color: #356859;
-    padding: 20px;
-    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cabeçalho-imagem {
@@ -20,9 +28,38 @@ body {
     height: auto;
 }
 
-/* Botões de fonte */
+.navegacao {
+    margin-top: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #287d59;
+}
+
+/* Botões de acessibilidade */
+.botoes-acessibilidade {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
 .btn {
-    margin: 10px 5px;
+    margin: 0 10px;
     padding: 10px 15px;
     font-size: 16px;
     background-color: #37966f;
@@ -36,21 +73,20 @@ body {
     background-color: #287d59;
 }
 
-/* Seções */
-.apresentaçao {
+/* Apresentação */
+.apresentacao {
     padding: 40px 20px;
-    background-color: #fff;
     text-align: center;
+    background-color: #ffffff;
 }
 
-.apresentaçao-div-conteudo h2 {
+.apresentacao-div-conteudo h2 {
     font-size: 28px;
     margin-bottom: 20px;
     color: #113537;
 }
 
-/* Texto principal */
-.o\ que\ plantio h2 {
+.descricao-plantio h2 {
     font-size: 20px;
     max-width: 800px;
     margin: 0 auto;
@@ -58,61 +94,69 @@ body {
 }
 
 /* Tipos de plantio */
-.tipos\ de\ plantio {
+.tipos-de-plantio {
     padding: 40px 20px;
-    background-color: #f0f0f0;
+    background-color: #eef0f2;
 }
 
-.tipos\ de\ plantio h1 {
-    font-size: 30px;
+.tipos-de-plantio h1 {
     text-align: center;
+    font-size: 30px;
     margin-bottom: 40px;
     color: #2c3e50;
 }
 
-/* Blocos de cada tipo */
-.platio\ direto, 
-.plantio\ convencional, 
-.plantio\ aéreo {
-    background-color: #ffffff;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+/* Container flex para os blocos de plantio */
+.tipos-de-plantio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
-.platio\ direto h1,
-.plantio\ convencional h1,
-.plantio\ aéreo h1 {
-    font-size: 24px;
+/* Cada bloco de plantio */
+.plantio-direto,
+.plantio-convencional,
+.plantio-aereo {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 350px;
+    flex: 1 1 300px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.plantio-direto h1,
+.plantio-convencional h1,
+.plantio-aereo h1 {
+    font-size: 22px;
     color: #14532d;
     margin-bottom: 10px;
 }
 
-.platio\ direto h2,
-.plantio\ convencional h2,
-.plantio\ aéreo h2 {
-    font-size: 18px;
-    line-height: 1.6;
+.plantio-direto h2,
+.plantio-convencional h2,
+.plantio-aereo h2 {
+    font-size: 16px;
     color: #333;
 }
 
-/* Imagens dos sistemas de plantio */
-.foto\ spd,
-.plantio\ convencional img,
-.plantio\ aéreo img {
+.foto-spd,
+.plantio-convencional img,
+.plantio-aereo img {
     width: 100%;
-    max-width: 700px;
-    margin-top: 15px;
+    height: auto;
     border-radius: 8px;
+    margin-top: 10px;
 }
 
 /* Rodapé */
 .rodape {
     background-color: #356859;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
 
 .rodape-imagem {
@@ -122,16 +166,17 @@ body {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .botoes-acessibilidade {
+        flex-direction: column;
+    }
+
     .btn {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-
-    .apresentaçao-div-conteudo h2 {
-        font-size: 22px;
-    }
-
-    .tipos\ de\ plantio h1 {
-        font-size: 24px;
+        margin: 5px 0;
     }
 }
